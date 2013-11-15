@@ -21,20 +21,29 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/jquery-mobile.min.css" />
+        <link rel="stylesheet" type="text/css" href="bib/jquery.mobile.min.css" />
         <link rel="stylesheet" type="text/css" href="css/pictureslider.css" />
         <title>PictureSlider</title>
         <script type="text/javascript" src="bib/jquery.min.js"></script>
-        <script type="text/javascript" src="bib/jquery-mobile.min.js"></script>
+        <script type="text/javascript" src="bib/jquery.mobile.min.js"></script>
         <script type="text/javascript" src="bib/cordova.js"></script>
         <script type="text/javascript" src="js/pictureslider.js"></script>
     </head>
     <body onload="onBodyLoad()">
     
         <div class="app" data-role="page">
-        	<div class="header" data-role="header">header</div>
-          	<div id="content" class="content" data-role="content">content</div>
-          	<div class="footer" data-role="footer">footer</div>
+        	<div id="header" data-role="header">
+				<div class="titel left">PictureSlider</div>
+				<div class="values left">
+					<div class="label left">Teller: </div>
+					<div id="counter" class="value left">0</div>
+				</div>
+				<div class="advertorials right"></div>
+				<div class="button right"><img src="img/settings.png" /></div>
+				<div class="button right"><img src="img/camera.png" /></div>
+				<div id="locations" class="right"></div>
+			</div>
+          	<div id="content" class="content clear" data-role="content"></div>
         </div>
 
     </body>
